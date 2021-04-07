@@ -14,7 +14,7 @@ import javax.persistence.Id;
 import javax.persistence.Query;
 
 
-
+//adadad
 
 @Entity
 public class NewEntity implements Serializable {
