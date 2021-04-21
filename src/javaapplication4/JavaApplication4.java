@@ -13,12 +13,8 @@ public class JavaApplication4 {
       String hql = "from Studentyi a where s.gruppyi.shifr = :param";
       Query query = (Query) session.createQuery(hql);
       
-      List <Studentyi> rows;
-      
-       rows = query.list();
-      
-       
-       
+      List <Studentyi> rows = query.getResultList();
+    
        rows.forEach((row) -> {
            System.out.println(row.getImya() + " " + row.getFamiliya() + " " + row.getOtchestvo());
        });
