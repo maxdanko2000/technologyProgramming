@@ -22,7 +22,7 @@ public class Lab1 {
         System.out.println();
         HashMap map = exercises.exercise2();
         System.out.println(map);
-        exercises.exercise3();
+//        exercises.exercise3();
         session.getTransaction().commit();
     }
     

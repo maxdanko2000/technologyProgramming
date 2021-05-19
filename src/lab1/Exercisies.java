@@ -48,11 +48,11 @@ public class Exercisies {
         return m;
     }
     
-    public void exercise3(){
-        String sql = "from Gruppyi g";
-        Query query = session.createQuery(sql);
-        
-        List<Gruppyi> groups = query.list();
+//    public void exercise3(){
+//        String sql = "from Gruppyi g";
+//        Query query = session.createQuery(sql);
+//        
+//        List<Gruppyi> groups = query.list();
 //        for(Gruppyi g : groups){
 //            Date dt = new Date();
 //            if(dt.getYear() - g.getDataFormir().getYear() >= 4){
@@ -67,5 +67,5 @@ public class Exercisies {
 //                session.update(g);
 //            }
 //        }
-    }
+//    }
 }
