@@ -53,19 +53,19 @@ public class Exercisies {
         Query query = session.createQuery(sql);
         
         List<Gruppyi> groups = query.list();
-        for(Gruppyi g : groups){
-            Date dt = new Date();
-            if(dt.getYear() - g.getDataFormir().getYear() >= 4){
-                g.setStatus("rasform");
-                g.setStatusDate(dt);
-                Set<Studentyi> studs = g.getStudentyis();
-                for(Studentyi s : studs){
-                    s.setStatus("vipusk");
-                    s.setStatusDate(dt);
-                    session.update(s);
-                }
-                session.update(g);
-            }
-        }
+//        for(Gruppyi g : groups){
+//            Date dt = new Date();
+//            if(dt.getYear() - g.getDataFormir().getYear() >= 4){
+//                g.setStatus("rasform");
+//                g.setStatusDate(dt);
+//                Set<Studentyi> studs = g.getStudentyis();
+//                for(Studentyi s : studs){
+//                    s.setStatus("vipusk");
+//                    s.setStatusDate(dt);
+//                    session.update(s);
+//                }
+//                session.update(g);
+//            }
+//        }
     }
 }
