@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package lab1;
 
@@ -15,18 +11,15 @@ import java.util.Set;
 import org.hibernate.Query;
 import org.hibernate.Session;
 
-/**
- *
- * @author 18751
- */
-public class Tasks {
+
+public class Exercisies {
     private Session session;
     
-    public Tasks(Session session){
+    public Exercisies(Session session){
         this.session = session;
     }
     
-    public List<Studentyi> task1(){
+    public List<Studentyi> exercise1(){
         String sql = "from Studentyi s";
         Query query = session.createQuery(sql);
         
@@ -34,7 +27,7 @@ public class Tasks {
         return rows;
     }
     
-    public HashMap task2(){
+    public HashMap exercise2(){
         String sql = "from Gruppyi g";
         Query query = session.createQuery(sql);
         
@@ -55,7 +48,7 @@ public class Tasks {
         return m;
     }
     
-    public void task3(){
+    public void exercise3(){
         String sql = "from Gruppyi g";
         Query query = session.createQuery(sql);
         
